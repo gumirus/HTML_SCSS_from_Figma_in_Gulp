@@ -194,13 +194,13 @@
 		"prefix": "sect",
 		"body": [
 			"<section class=\"section-${1:example}\">",
-			"	<h2 class=\"visually-hidden\">${2:title}</h2>",
-			"	<div class=\"container\">",
-			"		<h2 class=\"section-${1:example}__title\">${2:title}</h2>",
-			"		<div class=\"section-${1:example}__${3:grid}\">",
-			"			${4:Content}",
-			"		</div>",
-			"	</div>",
+			"<h2 class=\"visually-hidden\">${2:title}</h2>",
+			"<div class=\"container\">",
+			"<h2 class=\"section-${1:example}__title\">${2:title}</h2>",
+			"<div class=\"section-${1:example}__${3:grid}\">",
+			"${4:Content}",
+			"</div>",
+			"</div>",
 			"</section>"
 		],
 		"description": "HTML section"
@@ -209,7 +209,7 @@
 		"prefix": "mediaBg",
 		"body": [
 			"@include mediaBg() {",
-			"	background-image: url('./../img/${1:example}@2x.${2:jpg}');",
+			"background-image: url('./../img/${1:example}@2x.${2:jpg}');",
 			"}"
 		],
 		"description": "CSS BG retina"
@@ -218,8 +218,8 @@
 		"prefix": "imgSet",
 		"body": [
 			"background-image: image-set(",
-			"	url('./../img/${1:example}') 1x,",
-			"	url('./../img/${1:example}') 2x);"
+			"url('./../img/${1:example}') 1x,",
+			"url('./../img/${1:example}') 2x);"
 		],
 		"description": "CSS img set"
 	},
@@ -227,7 +227,7 @@
 		"prefix": "svgIcon",
 		"body": [
 			"<svg class=\"icon icon--${1:example}\">",
-			"	<use href=\"./img/svgsprite/sprite.symbol.svg#${1:example}\"></use>",
+			"<use href=\"./img/svgsprite/sprite.symbol.svg#${1:example}\"></use>",
 			"</svg>"
 		],
 		"description": "SVG icon sprite"
